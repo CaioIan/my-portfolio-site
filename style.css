@@ -124,6 +124,14 @@
   color: rgb(255, 38, 0);
 }
 
+.acess-link {
+  font-size: 20px;
+}
+
+.acess-link:hover {
+  color: orange;
+}
+
 /* Footer */
 
 .footer-box{
