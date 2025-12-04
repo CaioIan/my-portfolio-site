@@ -11,15 +11,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        h2 {
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="navBox">
         <nav id="navbar" class="menu">
-            <a href="#welcome-section">About</a>
-            <a href="#projects">Work</a>
-            <a href="#profile-link">Social Media</a>
+            <a href="#welcome-section">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#profile-link">Contato</a>
         </nav>
     </div>
 
@@ -27,13 +39,72 @@
 
         <section id="welcome-section" class="welcome-box">
             <div class="text-box">
-                <h1>Hi I'm Caio <br>I'm <span class="title">a web developer</span></h1>
+                <h1 style="color: #38bdf8;">Olá, eu sou o Caio</h1>
+
+                <div class="bio">
+                    <p style="font-size: 1.2rem; color: #cbd5e1; margin-top: 20px;">
+                        Sou estudante de Marketing com foco em Tecnologia e Desenvolvedor Fullstack (Node.js, TypeScript, React). Também sou empreendedor na NOVSTAR, onde uno desenvolvimento e marketing para potencializar minha marca.
+                    </p>
+
+                    <p>
+                        Atualmente foco em construir soluções reais e, futuramente, pretendo cursar Arquitetura de Software.
+                    </p>
+                </div>
             </div>
+
+            <div class="profile-img-container">
+                <img src="./assets/eu.png" alt="Foto de Caio Ian" onerror="this.src='https://github.com/CaioIan.png'" class="profile-img">
+            </div>
+        </section>
+
+        <section id="skills" style="padding: 0 50px;">
+            <h2>Minhas Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skill-language">
+                    <span>Linguagens</span>
+                    <div class="skill-icons-container">
+                         <img src="./assets/logos/typescript.png" class="skill-icon" alt="TypeScript" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'">
+                         <img src="./assets/logos/jslogo.png" class="skill-icon" alt="JavaScript" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'">
+                    </div>
+                </li>
+
+                <li class="skill-frontend">
+                    <span>Frontend</span>
+                    <div class="skill-icons-container">
+                        <img src="./assets/logos/react.png" class="skill-icon" alt="React" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="skill-icon" alt="Next.js" style="background: white; border-radius: 50%;">
+                    </div>
+                </li>
+
+                <li class="skill-backend">
+                    <span>Backend</span>
+                    <div class="skill-icons-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
+                        <img src="./assets/logos/nestjslogo.png" class="skill-icon" alt="NestJS">
+                    </div>
+                </li>
+
+                <li class="skill-version-control">
+                    <span>Controle de Versão</span>
+                    <div class="skill-icons-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-icon" alt="GitHub" style="background: white; border-radius: 50%;">
+                    </div>
+                </li>
+
+                <li class="skill-tech">
+                    <span>Tecnologias que curto</span>
+                    <div class="skill-icons-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" class="skill-icon" alt="Prisma" style="filter: invert(1);">
+                        <img src="./assets/logos/dockerlogo.jpeg" class="skill-icon" alt="Docker">
+                    </div>
+                </li>
+            </ul>
         </section>
 
         <section id="projects" class="projects-box">
             <div class="project-text">
-                <h1>My projects</h1>
+                <h2>Meus Projetos</h2>
                 <hr>
             </div>
 
@@ -47,17 +118,10 @@
                             <img src="./assets/logos/typescript.png" class="symbol-image" alt="Typescript logo">
                             <img src="./assets/logos/css3.png" class="symbol-image" alt="CSS logo">
                         </p>
-
-                        <img src="https://res.cloudinary.com/dr38hecuk/image/upload/v1764767051/My%20portfolio%20images/tempus-pomodoro-screen_kotx7f.png" class="project-images" alt="Tempus Pomodoro screenshot" onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=Tempus+Preview'">
+                        <img src="https://res.cloudinary.com/dr38hecuk/image/upload/v1764767051/My%20portfolio%20images/tempus-pomodoro-screen_kotx7f.png" class="project-images" alt="Tempus Pomodoro" onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=Tempus+Preview'">
                     </a>
-
-                    <a href="https://tempus-pomodoro.vercel.app" class="acess-link" target="_blank">
-                        Acessar aplicação
-                    </a>
-
-                    <a href="https://github.com/CaioIan/tempus-pomodoro" class="acess-link" target="_blank">
-                        Acessar código do projeto no GitHub
-                    </a>
+                    <a href="https://tempus-pomodoro.vercel.app" class="acess-link" target="_blank">Acessar aplicação</a>
+                    <a href="https://github.com/CaioIan/tempus-pomodoro" class="acess-link" target="_blank">Ver código no GitHub</a>
                 </div>
 
                 <div class="box-hover">
@@ -68,20 +132,13 @@
                             <img src="./assets/logos/css3.png" class="symbol-image" alt="CSS logo">
                             <img src="./assets/logos/jslogo.png" class="symbol-image" alt="JavaScript logo">
                         </p>
-
-                        <img src="./assets/projeto-calculadora.png" class="project-images" alt="Calculadora screenshot">
+                        <img src="./assets/projeto-calculadora.png" class="project-images" alt="Calculadora">
                     </a>
-
-                    <a href="https://caioian.github.io/calculadora-js/" class="acess-link" target="_blank">
-                        Acessar aplicação
-                    </a>
-
-                    <a href="https://github.com/CaioIan/calculadora-js" class="acess-link" target="_blank">
-                        Acessar código do projeto no GitHub
-                    </a>
+                    <a href="https://caioian.github.io/calculadora-js/" class="acess-link" target="_blank">Acessar aplicação</a>
+                    <a href="https://github.com/CaioIan/calculadora-js" class="acess-link" target="_blank">Ver código no GitHub</a>
                 </div>
 
-                <div class="box-hover">
+                 <div class="box-hover">
                     <a class="project-tile" href="#" target="_blank">
                         <p class="project-title">
                             Verificador de Idade
@@ -89,12 +146,9 @@
                             <img src="./assets/logos/css3.png" class="symbol-image" alt="CSS logo">
                             <img src="./assets/logos/jslogo.png" class="symbol-image" alt="JavaScript logo">
                         </p>
-                        <img src="https://res.cloudinary.com/dr38hecuk/image/upload/v1649443858/My%20portfolio%20images/Verificador_de_idade_result_2_p00qpq.png" class="project-images" alt="Verificador de idade screenshot" onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=Verificador+Preview'">
+                        <img src="https://res.cloudinary.com/dr38hecuk/image/upload/v1649443858/My%20portfolio%20images/Verificador_de_idade_result_2_p00qpq.png" class="project-images" alt="Verificador" onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text=Verificador+Preview'">
                     </a>
-
-                    <a href="https://github.com/CaioIan/verificador-de-idade" class="acess-link" target="_blank">
-                        Acessar código do projeto no GitHub
-                    </a>
+                    <a href="https://github.com/CaioIan/verificador-de-idade" class="acess-link" target="_blank">Ver código no GitHub</a>
                 </div>
 
             </div>
@@ -102,21 +156,18 @@
 
         <footer class="footer-box" id="profile-link">
             <div class="footer-menu">
-
                 <div class="social-media-flex">
                     <a href="https://github.com/CaioIan" target="_blank">
                         <i class="fab fa-github" style="font-size: 40px; color: white;"></i>
                         GitHub
                     </a>
                 </div>
-
                 <div class="social-media-flex">
                     <a href="https://www.linkedin.com/in/caio-ian-oliveira-7b830b20b/" target="_blank">
                         <i class="fab fa-linkedin" style="font-size: 40px; color: #0077b5;"></i>
                         Linkedin
                     </a>
                 </div>
-
             </div>
         </footer>
 
